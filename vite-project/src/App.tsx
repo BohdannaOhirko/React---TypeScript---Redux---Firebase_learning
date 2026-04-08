@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 // import Task from "./components/Task";
 import TaskList from "./components/TaskList";
 import TaskQueue from "./components/TaskForm";
 import "./App.css";
-
+import Search from "./components/Search";
 function App() {
   return (
     <div>
@@ -22,6 +22,7 @@ function App() {
       <Task title="Подзвонити мамі" isCompleted={false} description="Увечері" /> */}
       {/* <TaskList /> */}
       <TaskQueue />
+      <Search />
     </div>
   );
 }
